@@ -55,7 +55,7 @@
             {
               "fontFamily": "Canela Deck Trial Medium",
               "src": [
-                "file:./inc/assets/fonts/canela/CanelaText-medium-Trial.woff"
+                "file:./assets/fonts/canela/CanelaText-medium-Trial.woff"
               ],
               "fontWeight": "500",
               "fontStyle": "normal"
@@ -70,7 +70,7 @@
             {
               "fontFamily": "Canela Trial Regular",
               "src": [
-                "file:./inc/assets/fonts/canela/CanelaText-regular-Trial.woff"
+                "file:./assets/fonts/canela/CanelaText-regular-Trial.woff"
               ],
               "fontWeight": "400",
               "fontStyle": "normal"
@@ -85,7 +85,7 @@
             {
               "fontFamily": "Manrope",
               "src": [
-                "file:./inc/assets/fonts/manrope/Manrope-VariableFont_wght.woff2"
+                "file:./assets/fonts/manrope/Manrope-VariableFont_wght.woff2"
               ],
               "fontWeight": "200 800",
               "fontStyle": "normal"
@@ -100,7 +100,7 @@
             {
               "fontFamily": "Fira Code",
               "src": [
-                "file:./inc/assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2"
+                "file:./assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2"
               ],
               "fontWeight": "300 700",
               "fontStyle": "normal"
