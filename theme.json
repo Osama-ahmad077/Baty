@@ -44,11 +44,8 @@
       ]
     },
     "typography": {
-      "fontFamily": true,
       "fluid": true,
       "defaultFontSizes": false,
-      "fontSize": "16px",
-      "lineHeight": "1.6",
       "fontFamilies": [
         {
           "name": "Canela medium",
@@ -137,7 +134,8 @@
           "size": "2.15rem",
           "slug": "xx-large"
         }
-      ]
+      ],
+      "dropCap": true
     },
     "spacing": {
       "spacingSizes": [
@@ -198,9 +196,12 @@
     }
   ],
   "styles": {
-    "color": {},
+    "color": {
+      "background": "var(--wp--preset--color--background)",
+      "text": "var(--wp--preset--color--primary)"
+    },
     "typography": {
-      "fontFamily": true,
+      "fontFamily": "var(--wp--preset--font-family--manrope)",
       "fontSize": "16px",
       "lineHeight": "1.6"
     },
@@ -234,11 +235,6 @@
       }
     },
     "blocks": {
-      "core/paragraph": {
-      "typography": {
-        "fontFamily": true
-      }
-    },
       "core/button": {
         "border": {
           "radius": "0px"
