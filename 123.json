@@ -1,0 +1,41 @@
+{
+    "name": "مكياج",
+    "id": 1245670988,
+    "sub_categories": [
+        {
+            "name": "أدوات المكياج",
+            "id": 380021225,
+            "sub_categories": null,
+            "url": "https://salla.design/ar/dev-4zkkfmy7wdwt32sg/أدوات-المكياج/c380021225",
+            "icon": "sicon-store",
+            "image": "https://cdn.salla.sa/lGlWoD/categories/1fk0ES8yfhMHu2aYEOhUUiWulIqypT2RQdPX4bJN.jpg"
+        },
+        {
+            "name": "مكياج الشفاه",
+            "id": 319640272,
+            "sub_categories": null,
+            "url": "https://salla.design/ar/dev-4zkkfmy7wdwt32sg/مكياج-الشفاه/c319640272",
+            "icon": "sicon-store",
+            "image": "https://cdn.salla.sa/lGlWoD/categories/YjcysUDwAux93vZYW0FaFIPPqH4aa7oMjCIEMCec.jpg"
+        },
+        {
+            "name": "مكياج العيون",
+            "id": 1827303889,
+            "sub_categories": null,
+            "url": "https://salla.design/ar/dev-4zkkfmy7wdwt32sg/مكياج-العيون/c1827303889",
+            "icon": "sicon-store",
+            "image": "https://cdn.salla.sa/lGlWoD/categories/V2Xowl7U7h1EOY93Gj63Ro5FcG5Q5BYS70no9gJB.jpg"
+        },
+        {
+            "name": "مكياج الوجه",
+            "id": 1518001884,
+            "sub_categories": null,
+            "url": "https://salla.design/ar/dev-4zkkfmy7wdwt32sg/مكياج-الوجه/c1518001884",
+            "icon": "sicon-store",
+            "image": "https://cdn.salla.sa/lGlWoD/categories/hXK97rQvwKgihFvRpRArSJjWV5a4JaMdFVtgz6dx.jpg"
+        }
+    ],
+    "url": "https://salla.design/ar/dev-4zkkfmy7wdwt32sg/مكياج/c1245670988",
+    "icon": "sicon-store",
+    "image": "https://cdn.salla.sa/lGlWoD/categories/D8B5iZprLMg5herDyC1TY3gdi7upFYhUpkKsYVOc.jpg"
+}
