@@ -1,0 +1,9 @@
+.wc-block-product-gallery-thumbnails__scrollable{
+  scrollbar-width:none;
+}
+.wc-block-components-product-sale-badge{
+  background:#DB0000;
+  color:#fff;
+  border:none;
+  border-radius:0px;
+}

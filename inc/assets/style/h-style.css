@@ -1,0 +1,476 @@
+
+/* styles---------theme */
+
+body {
+  background-color: var(--wp--preset--color--bg-color);
+}
+
+@media screen and (min-width: 783px) {
+  /* 1. تثبيت الهيدر */
+  .main-site-header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: var(--wp--preset--color--bg-color);
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .admin-bar .main-site-header {
+    top: 32px;
+  }
+
+  .main-site-header li a {
+    text-decoration: none;
+  }
+
+  /* 2. حاوية المنيو */
+  .main-site-header ul.wp-block-navigation__container li {
+    position: relative;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* 3. الخطوط الفاصلة */
+  .main-site-header ul.wp-block-navigation__container li::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60px;
+    border-right: 1px solid var(--wp--preset--color--contrast);
+  }
+
+  .main-site-header ul.wp-block-navigation__container li:first-child::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60px;
+    border-left: 1px solid var(--wp--preset--color--contrast);
+  }
+
+  /* WooCommerce Icons */
+  .main-site-header .wp-block-woocommerce-customer-account,
+  .main-site-header .wp-block-woocommerce-mini-cart {
+    position: relative;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .main-site-header .wp-block-woocommerce-customer-account::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60px;
+    border-right: 1px solid var(--wp--preset--color--contrast);
+  }
+
+  .main-site-header .wp-block-woocommerce-mini-cart::after {
+    display: none;
+  }
+
+  .main-site-header .is-content-justification-left a,
+  .main-site-header .wp-block-categories-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-right: 15px;
+  }
+
+  .main-site-header .is-content-justification-left a::after,
+  .main-site-header .wp-block-categories-dropdown::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60px;
+    border-right: 1px solid var(--wp--preset--color--contrast);
+    pointer-events: none;
+  }
+}
+
+/* //////////////////////////// end-header //////////////////////// */
+/* --- تصميم الزرار الموحد --- */
+.timeless-banner .wp-element-button {
+  position: relative;
+  padding: 15px 45px;
+  background-color: transparent;
+  border: 2px solid var(--wp--preset--color--accent-6);
+  color: var(--wp--preset--color--accent-6);
+  text-decoration: none;
+  z-index: 1;
+  display: inline-block;
+  overflow: visible; /* مهم عشان المربعات تبان بره الحدود */
+
+  /* تأثير التعبئة الخلفية */
+  background-image: linear-gradient(
+    var(--wp--preset--color--accent-6),
+    var(--wp--preset--color--accent-6)
+  );
+  background-size: 100% 0;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.4s ease,
+    all 0.4s ease;
+}
+
+/* المربعين (الخطين) في البداية */
+.timeless-banner .wp-element-button::before {
+  content: "";
+  transform: translateY(-100%) rotate(90deg);
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: var(--wp--preset--color--accent-6);
+  left: 20px;
+  top: 24px;
+  box-shadow: 24px 0px 0px var(--wp--preset--color--accent-6);
+  transition: all 0.4s ease;
+}
+
+/* المربعين (الخطين) في النهاية */
+.timeless-banner .wp-element-button::after {
+  content: "";
+  transform: translateY(-100%) rotate(90deg);
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: var(--wp--preset--color--accent-6);
+  right: 20px;
+  top: 24px;
+  box-shadow: 24px 0px 0px var(--wp--preset--color--accent-6);
+  /* transition: all 0.4s ease; */
+}
+
+/* تأثير الـ Hover للزرار */
+.timeless-banner .wp-element-button:hover {
+  color: var(--wp--preset--color--base) !important;
+  background-size: 100% 100%;
+}
+
+.timeless-banner .wp-element-button:hover::before {
+  /* transform: rotate(90deg) translateX(5px); */
+  background-color: var(--wp--preset--color--base);
+  box-shadow: 15px 0px 0px var(--wp--preset--color--base);
+}
+
+.timeless-banner .wp-element-button:hover::after {
+  background-color: var(--wp--preset--color--base);
+  box-shadow: 15px 0px 0px var(--wp--preset--color--base);
+}
+
+/* --- النصوص --- */
+.timeless-banner .wp-block-group h3 {
+  transition: color 0.3s ease;
+  color: var(--wp--preset--color--accent-3);
+  cursor: pointer;
+}
+
+.timeless-banner .wp-block-group h3:hover {
+  color: var(--wp--preset--color--accent-6);
+}
+
+.timeless-banner .wp-block-group p {
+  color: var(--wp--preset--color--accent-6) !important;
+  font-size: 18px !important;
+  line-height: 1.6;
+}
+
+/* --- شريط العناوين المتحرك --- */
+.timeless-banner .designe-marquee {
+  overflow: hidden; /* الحاوية هي اللي بتعمل القص */
+  white-space: nowrap;
+  width: 100%;
+}
+
+.timeless-banner .designe-marquee h2 {
+  color: var(--wp--preset--color--accent-6);
+  display: inline-block;
+  font-size: 2.5rem;
+  white-space: nowrap;
+  padding-left: 100%; /* يبدأ من خارج الشاشة يميناً */
+  animation: marquee 15s linear infinite; /* بطأنا السرعة شوية عشان يتقرأ */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  } /* ينتهي خارج الشاشة يساراً */
+}
+
+/* ///////////////////////// */
+
+/* .mian-paragraph p,
+.mian-paragraph h2 {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease;
+}
+
+.swiper-slide-active .mian-paragraph p,
+.swiper-slide-active .mian-paragraph h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1s; 
+} */
+
+/* ================= TEXT ANIMATION ================= */
+
+.mian-paragraph p,
+.mian-paragraph h2 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.swiper-slide-active .mian-paragraph p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+
+.swiper-slide-active .mian-paragraph h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.9s;
+}
+
+/* ================= HERO WRAPPER ================= */
+
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ================= THUMBS OVERLAY ================= */
+
+.hero-banner .thumbs-slider {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 420px;
+  max-width: 90%;
+  padding: 15px;
+  border-radius: 14px;
+  z-index: 10;
+}
+
+/* ================= THUMB SLIDES ================= */
+
+.hero-banner .thumbs-slider .swiper-slide {
+  width: 120px !important;
+  height: 80px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.hero-banner .thumbs-slider .swiper-slide-thumb-active {
+  opacity: 1;
+  transform: scale(1.05);
+  border: 2px solid #5c3d2e;
+}
+
+/* ================= THUMB IMAGES ================= */
+
+.hero-banner .thumbs-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+  .hero-banner .thumbs-slider {
+    width: 320px;
+    bottom: 25px;
+    right: 25px;
+  }
+
+  .hero-banner .thumbs-slider .swiper-slide {
+    width: 90px !important;
+    height: 65px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 576px) {
+  .hero-banner .thumbs-slider {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .hero-banner .thumbs-slider .swiper-slide {
+    width: 80px !important;
+    height: 60px;
+  }
+}
+
+/* product-img-banner */
+
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button)):hover) {
+  text-decoration: none;
+}
+
+.card-price {
+  margin-top: 0;
+  justify-content: space-between;
+}
+.banner-product-img
+  .wp-block-woocommerce-product-template
+  > .wp-block-separator:last-child {
+  display: none;
+}
+/* اخفاء النص */
+.banner-product-img
+  .wp-block-woocommerce-product-button
+  .add_to_cart_button
+  span {
+  display: none;
+}
+
+/* الشكل الأساسي */
+.banner-product-img .wp-block-woocommerce-product-button .add_to_cart_button {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  font-size: 0; /* يخفي النص */
+}
+
+/* أيقونة السلة */
+.banner-product-img
+  .wp-block-woocommerce-product-button
+  .add_to_cart_button::before {
+  content: "\f07a"; /* cart */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+/* ✅ لما المنتج يتضاف للكارت */
+.banner-product-img
+  .wp-block-woocommerce-product-button
+  .add_to_cart_button.added::before {
+  content: "\f00c"; /* check icon */
+}
+
+.banner-product-img .wp-block-button.wc-block-components-product-button {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  white-space: normal;
+  width: 25%;
+}
+
+.banner-product-img .taxonomy-product_cat a {
+  text-decoration: none;
+}
+
+.banner-product-img .has-text-align-left a:hover {
+  text-decoration: none;
+}
+.banner-product-img .wp-block-woocommerce-product-image {
+  width: 133px;
+  height: 142px;
+}
+
+.banner-product-img .wp-block-woocommerce-product-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-product-img span[data-wp-bind--hidden] {
+  display: none !important;
+}
+
+.banner-product-img .wc-block-components-product-button__button {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.banner-product-img .slide-2 {
+  height: 638px;
+}
+.banner-product-img .slide-2 .is-light {
+  height: 100%;
+}
+/* @media (width: 1024px) {
+
+} */
+
+@media (max-width: 375px) {
+  .banner-product-img .slide-2 {
+    height: 220px;
+  }
+  .banner-product-img .slide-2 .is-light img {
+    height: 100%;
+  }
+  .banner-product-img .wc-block-product-template__responsive {
+    display: flex;
+    flex-wrap: nowrap; /* يمنع النزول لسطر جديد */
+    overflow-x: auto; /* يفعل الاسكرول الأفقي */
+    gap: 12px; /* مسافة بين المنتجات */
+    scroll-snap-type: x mandatory; /* اختياري: سحب ناعم */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+  }
+
+  .banner-product-img .wc-block-product-template__responsive > * {
+    min-width: 220px; /* عرض كل كارت */
+    flex: 0 0 auto; /* يمنع التمدد */
+    scroll-snap-align: start; /* اختياري */
+  }
+  hr {
+    display: none;
+  }
+  .banner-product-img .slide-2 {
+    order: 0;
+  }
+
+  .banner-product-img .slide-2 .is-light img {
+    height: 220px;
+  }
+  .banner-product-img .slide-1 {
+    order: 1;
+  }
+  .banner-product-img .slide-3 {
+    order: 2;
+  }
+}

@@ -1,0 +1,88 @@
+.wp-site-blocks {
+  .tinvwl_add_to_wishlist_button {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--wp--preset--color--accent-4);
+    width: fit-content;
+    padding: 10px;
+    gap: 8px;
+  }
+  
+
+  a:where(:not(.wp-element-button)) {
+    text-decoration: none !important;
+  }
+
+  .tinvwl_add_to_wishlist_button::before {
+    font-size: 28px;
+  }
+
+  
+
+  select {
+    -webkit-appearance: none;
+    /* Safari/Chrome */
+    -moz-appearance: none;
+    /* Firefox */
+    appearance: none;
+    /* Standard */
+    padding: 1em 2em 1em 0.5em;
+    /* leave space for custom arrow */
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5"><path fill="black" d="M0 0l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.5em center;
+    background-size: 10px 5px;
+  }
+
+  select option {
+    background-color: transparent;
+  }
+
+  .wc-block-product-filters__overlay-content div > h3 {
+    padding: 19px 24px;
+    background: var(--wp--preset--color--accent-3);
+  }
+
+  .wc-block-product-filters__overlay-content h2 {
+    display: none;
+  }
+
+  .wc-block-product-filters__overlay-content > div {
+    border: 1px solid var(--wp--preset--color--accent-4);
+  }
+
+  .wc-block-product-filters__overlay-content > div > h3 + div {
+    padding: 19px 24px;
+  }
+
+  .wp-block-group.card-data {
+    display: flex;
+    align-items: start;
+  }
+
+  h1:where(.wp-block-heading).has-background,
+  h2:where(.wp-block-heading).has-background,
+  h3:where(.wp-block-heading).has-background,
+  h4:where(.wp-block-heading).has-background,
+  h5:where(.wp-block-heading).has-background,
+  h6:where(.wp-block-heading).has-background {
+    padding: 19px 24px;
+  }
+
+  h3 {
+    margin: 0px;
+  }
+
+  .wp-block-columns {
+    flex-direction: column;
+  }
+
+  @media (min-width: 1240px) {
+    .wp-block-columns {
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,149 @@
+/* Slide active */
+.collection_swiper .swiper-slide-active {
+  opacity: 1;
+  filter: blur(0);
+  z-index: 10;
+}
+
+/* Slide images */
+.collection_swiper .swiper-slide img {
+  width: 100%;
+  height: 606px;
+  border-radius: 8px;
+  transition: filter 0.5s ease;
+}
+
+/* Darken inactive slides */
+.collection_swiper .swiper-slide:not(.swiper-slide-active) img {
+  filter: brightness(0.7);
+}
+
+/* Badges container */
+@media screen and (max-width: 769px) {
+  .badge-left {
+   font-size: 8px !important;
+   max-width: 215px !important;
+  }
+  .badge-right{
+   font-size: 10px !important;
+  }
+}
+.collection_swiper .swiper-slide .badge-right,
+.collection_swiper .swiper-slide .badge-left {
+  position: absolute;
+  opacity: 0;
+  filter: blur(8px);
+  transition:
+    opacity 1.5s ease,
+    transform 1.5s ease,
+    filter 1.5s ease;
+  z-index: 10;
+  padding: 10px;
+  background: var(--wp--preset--color--background, #fff);
+  color: black;
+  border: 2px solid var(--wp--preset--color--dark-brown, #654e3e);
+}
+
+/* Show badges on active slide */
+.collection_swiper .swiper-slide-active .badge-right,
+.collection_swiper .swiper-slide-active .badge-left {
+  opacity: 1;
+  filter: blur(0);
+}
+
+/* Right badge top right */
+.collection_swiper .swiper-slide .badge-right {
+  top: 15px;
+  left: 15px;
+  transform: rotate(-45deg);
+}
+
+/* Left badge bottom left */
+.collection_swiper .swiper-slide .badge-left {
+  bottom: 15px;
+  right: 15px;
+  max-width: 408px;
+  transform: rotate(4deg);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .collection_swiper .swiper-slide img {
+    height: 300px;
+  }
+}
+.top_title {
+  position: relative;
+  width: fit-content;
+}
+.head_badge_left {
+  gap: 5px;
+  position: absolute;
+  top: -14px;
+  left: -16%;
+  padding-inline: 10px;
+  transform: rotate(-4deg);
+  background-color: var(--wp--preset--color--background);
+  border: 4px solid var(--wp--preset--color--dark-brown);
+  figure {
+    width: 40px;
+    height: 58px;
+    img {
+      height: 100%;
+      border-radius: 0;
+    }
+  }
+  h1 {
+    color: var(--wp--preset--color--dark-brown);
+  }
+}
+.wp-block-cover,
+.wp-block-cover-image {
+  padding-block: 2rem;
+  padding-inline: 0;
+}
+@media screen and (max-width: 768px) {
+  .head_badge_left {
+    top: -10px;
+    left: -20%;
+      transform: rotate(-25deg);
+    figure {
+      width: 14px;
+      height: 21px;
+    }
+  }
+}
+
+.heading_title {
+  gap: 12px;
+}
+.right_head_badge {
+  position: absolute;
+  bottom: 0;
+  right: -50px;
+
+  figure {
+    img {
+      width: 50px !important;
+      border-radius: 50% !important;
+      border: 4px solid var(--wp--preset--color--accent-brown);
+      height: auto;
+      height: 50px !important;
+      height: 100%;
+      border-radius: 0;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+.right_head_badge {
+    right: -30px;
+  figure {
+    img {
+      width: 27px !important;
+      border: 1px solid var(--wp--preset--color--accent-brown);
+      height: 27px !important;
+    }
+  }
+}
+  
+}
