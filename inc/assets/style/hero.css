@@ -10,10 +10,18 @@
   max-width: 634px; /* أو أي قيمة */
   margin: auto;
 }
+.fancy-slider .wp-block-cover, .wp-block-cover-image{
+  min-height: 85vh !important;
+}
 
+@media (max-width:768px) {
+  .fancy-slider .wp-block-cover, .wp-block-cover-image{
+      min-height: 30vh !important;
+  }
+}
 @media (max-width: 768px) {
   .thumb-carousel {
-    max-width: 300px;
+    max-width: 260px;
   }
   .thumb-carousel .owl-item img {
     height: 80px;
@@ -23,23 +31,23 @@
 .owl-nav {
   display: none;
 }
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .main-carousel .wp-block-cover.is-position-bottom-left {
     align-items: center;
     justify-content: center;
   }
-}
-
-.main-carousel .wp-block-cover {
-  height: 872px;
-}
+} */
+  :root :where(  .thumb-carousel .wp-block-image img, .wp-block-image .wp-block-image__crop-area, .wp-block-image .components-placeholder) {
+    border-radius: 0;
+  }
 @media screen and (max-width: 768px) {
   .main-carousel .wp-block-cover {
     height: 500px;
   }
 }
+
 /* Default (غير active) */
-.main-carousel .wp-block-cover__inner-container p {
+.main-carousel .owl-item .wp-block-cover__inner-container p {
   opacity: 0;
   transform: scale(0.9) translateY(60px);
   transition: all 0.5s ease-in-out;
@@ -76,6 +84,12 @@
   gap: 10px !important;
   z-index: 10;
 }
+@media (max-width:768px) {
+  .thumb-carousel{
+      right: 10px !important;
+      bottom: 10px !important;
+  }
+}
 
 /* Thumbnails Images */
 .thumb-carousel .wp-block-image img {
@@ -91,7 +105,7 @@
 
 @media screen and (max-width: 768px) {
   .thumb-carousel .wp-block-image img {
-    height: 80px !important;
+    height: 64px !important;
   }
 }
 /* Highlighted thumbnail */
