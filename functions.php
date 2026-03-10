@@ -157,10 +157,7 @@ add_action('wp_enqueue_scripts', 'baty_scripts');
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
-require get_template_directory() . '/inc/assets/enqueue.php';
-require get_template_directory() . '/inc/assets/init_plugin.php';
-require get_template_directory() . '/inc/assets/init_pattern.php';
+
 /**
  * Custom template tags for this theme.
  */

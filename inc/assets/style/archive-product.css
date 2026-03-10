@@ -8,11 +8,6 @@
     gap: 8px;
   }
   
-
-  a:where(:not(.wp-element-button)) {
-    text-decoration: none !important;
-  }
-
   .tinvwl_add_to_wishlist_button::before {
     font-size: 28px;
   }
