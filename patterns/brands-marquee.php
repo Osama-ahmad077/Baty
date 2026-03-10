@@ -8,7 +8,7 @@
 ?>
 <!-- wp:group {"metadata":{"categories":["Brands"],"patternName":"baty/brands-marquee","name":"Brands Marquee"},"align":"full","className":"brands-marquee","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"var:preset|spacing|70","right":"var:preset|spacing|70"},"margin":{"top":"var:preset|spacing|56","bottom":"var:preset|spacing|56"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull brands-marquee" style="margin-top:var(--wp--preset--spacing--56);margin-bottom:var(--wp--preset--spacing--56);padding-top:0;padding-right:var(--wp--preset--spacing--70);padding-bottom:0;padding-left:var(--wp--preset--spacing--70)"><!-- wp:heading {"textAlign":"center","className":"is-style-default","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}},"typography":{"fontWeight":"700"}},"fontSize":"x-large","fontFamily":"canela-500"} -->
-<h2 class="wp-block-heading has-text-align-center is-style-default has-canela-500-font-family has-x-large-font-size" style="margin-bottom:var(--wp--preset--spacing--50);font-weight:700">Our Trusted Brand Partners</h2>
+<h2 class="wp-block-heading has-text-align-center is-style-default has-canela-500-font-family has-x-large-font-size" style="margin-bottom:var(--wp--preset--spacing--50);font-weight:700">shhhh</h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"className":"swiper brands-slider","style":{"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"0"}},"layout":{"type":"constrained"}} -->
