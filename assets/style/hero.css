@@ -1,0 +1,121 @@
+/* Main Slider */
+.main-carousel {
+  border: 2px solid var(--wp--preset--color--dark-brown);
+  border-top: 0;
+  p {
+    margin-top: 0;
+  }
+}
+.thumb-carousel {
+  max-width: 634px; /* أو أي قيمة */
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .thumb-carousel {
+    max-width: 300px;
+  }
+  .thumb-carousel .owl-item img {
+    height: 80px;
+    object-fit: cover;
+  }
+}
+.owl-nav {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .main-carousel .wp-block-cover.is-position-bottom-left {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.main-carousel .wp-block-cover {
+  height: 872px;
+}
+@media screen and (max-width: 768px) {
+  .main-carousel .wp-block-cover {
+    height: 500px;
+  }
+}
+/* Default (غير active) */
+.main-carousel .wp-block-cover__inner-container p {
+  opacity: 0;
+  transform: scale(0.9) translateY(60px);
+  transition: all 0.5s ease-in-out;
+  transition-delay: 1s; /* ← التأخير */
+}
+
+/* Active slide */
+.main-carousel .owl-item.active .wp-block-cover__inner-container p {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+.main-carousel .owl-item .wp-block-cover img {
+  transform: scale(0.8);
+  opacity: 0.7;
+  transition: all 0.5s ease-in-out;
+}
+
+.main-carousel .owl-item.active .wp-block-cover img {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Gallery container position relative */
+.js-sync-slider {
+  position: relative !important; /* عشان نقدر نعمل thumbs absolute */
+}
+
+/* Thumbnails */
+.thumb-carousel {
+  position: absolute !important;
+  bottom: 40px !important;
+  right: 40px !important;
+  width: auto;
+  gap: 10px !important;
+  z-index: 10;
+}
+
+/* Thumbnails Images */
+.thumb-carousel .wp-block-image img {
+  /* width: 206px !important; */
+  height: 128px !important;
+  object-fit: cover;
+  border: 1.6px solid #fff;
+  transform: rotate(0deg);
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .thumb-carousel .wp-block-image img {
+    height: 80px !important;
+  }
+}
+/* Highlighted thumbnail */
+.thumb-carousel .owl-item.current img {
+  border-color: #7c3aed; /* highlight */
+  opacity: 1;
+}
+
+/* Adjust owl-item spacing */
+.thumb-carousel .owl-item {
+  margin-right: 10px;
+}
+
+.thumb-carousel .owl-item.current img {
+  border: 3px solid #7c3aed; /* highlight على الصورة النشطة */
+}
+
+/* اجعل thumbnails قابلة للضغط */
+.thumb-carousel .owl-item {
+  cursor: pointer;
+}
+.thumb-carousel {
+  /* width: fit-content !important; */
+  .owl-stage {
+    /* width: fit-content !important; */
+  }
+}
