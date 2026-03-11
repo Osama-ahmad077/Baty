@@ -7,6 +7,7 @@
       "contentSize": "1720px",
       "wideSize": "2280px"
     },
+    "useRootPaddingAwareAlignments": true,
     "color": {
       "defaultPalette": false,
       "palette": [
@@ -44,150 +45,97 @@
     },
     "typography": {
       "fluid": true,
-      "typography": {
-			"writingMode": true,
-			"defaultFontSizes": false,
-			"fluid": true,
-			"fontSizes": [
-				{
-					"fluid": false,
-					"name": "Small",
-					"size": "0.875rem",
-					"slug": "small"
-				},
-				{
-					"fluid": {
-						"max": "1.125rem",
-						"min": "1rem"
-					},
-					"name": "Medium",
-					"size": "1rem",
-					"slug": "medium"
-				},
-				{
-					"fluid": {
-						"max": "1.375rem",
-						"min": "1.125rem"
-					},
-					"name": "Large",
-					"size": "1.38rem",
-					"slug": "large"
-				},
-				{
-					"fluid": {
-						"max": "2rem",
-						"min": "1.75rem"
-					},
-					"name": "Extra Large",
-					"size": "clamp(1.5rem, 1.1939rem + 1.3061vw, 2.5rem)",
-					"slug": "x-large"
-				},
-				{
-					"fluid": {
-						"max": "3rem",
-						"min": "2.15rem"
-					},
-					"name": "Extra Extra Large",
-					"size": "2.15rem",
-					"slug": "xx-large"
-				}
-			],
-			"fontFamilies": [
-				{
-					"name": "Canela medium",
-					"slug": "canela-500",
-					"fontFamily": "Canela Deck Trial Medium, sans-serif",
-					"fontFace": [
-						{
-							"src": [
-								"file:./inc/assets/fonts/canela/CanelaText-medium-Trial.woff"
-							],
-							"fontWeight": "500",
-							"fontStyle": "medium",
-							"fontFamily": "Canela Deck Trial Black"
-						}
-					]
-				},
-				{
-					"name": "Canela regular",
-					"slug": "canela-400",
-					"fontFamily": "Canela Trial Regular, sans-serif",
-					"fontFace": [
-						{
-							"src": [
-								"file:./inc/assets/fonts/canela/CanelaText-regular-Trial.woff"
-							],
-							"fontWeight": "400",
-							"fontStyle": "normal",
-							"fontFamily": "Canela Deck Trial Black"
-						}
-					]
-				},
-				{
-					"name": "Manrope",
-					"slug": "manrope",
-					"fontFamily": "Manrope, sans-serif",
-					"fontFace": [
-						{
-							"src": [
-								"file:./inc/assets/fonts/manrope/Manrope-VariableFont_wght.woff2"
-							],
-							"fontWeight": "200 800",
-							"fontStyle": "normal",
-							"fontFamily": "Manrope"
-						}
-					]
-				},
-				{
-					"name": "Fira Code",
-					"slug": "fira-code",
-					"fontFamily": "\"Fira Code\", monospace",
-					"fontFace": [
-						{
-							"src": [
-								"file:./inc/assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2"
-							],
-							"fontWeight": "300 700",
-							"fontStyle": "normal",
-							"fontFamily": "\"Fira Code\""
-						}
-					]
-				}
-			]
-		},
-		"useRootPaddingAwareAlignments": true,
+      "defaultFontSizes": false,
+      "fontFamilies": [
+        {
+          "name": "Canela medium",
+          "slug": "canela-500",
+          "fontFamily": "'Canela Deck Trial Medium', sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Canela Deck Trial Medium",
+              "src": [
+                "file:./assets/fonts/canela/CanelaText-medium-Trial.woff"
+              ],
+              "fontWeight": "500",
+              "fontStyle": "normal"
+            }
+          ]
+        },
+        {
+          "name": "Canela regular",
+          "slug": "canela-400",
+          "fontFamily": "'Canela Trial Regular', sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Canela Trial Regular",
+              "src": [
+                "file:./assets/fonts/canela/CanelaText-regular-Trial.woff"
+              ],
+              "fontWeight": "400",
+              "fontStyle": "normal"
+            }
+          ]
+        },
+        {
+          "name": "Manrope",
+          "slug": "manrope",
+          "fontFamily": "'Manrope', sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Manrope",
+              "src": [
+                "file:./assets/fonts/manrope/Manrope-VariableFont_wght.woff2"
+              ],
+              "fontWeight": "200 800",
+              "fontStyle": "normal"
+            }
+          ]
+        },
+        {
+          "name": "Fira Code",
+          "slug": "fira-code",
+          "fontFamily": "'Fira Code', monospace",
+          "fontFace": [
+            {
+              "fontFamily": "Fira Code",
+              "src": [
+                "file:./assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2"
+              ],
+              "fontWeight": "300 700",
+              "fontStyle": "normal"
+            }
+          ]
+        }
+      ],
       "fontSizes": [
         {
-          "slug": "small",
-          "size": "14px",
-          "name": "Small"
+          "name": "Small",
+          "size": "0.875rem",
+          "slug": "small"
         },
         {
-          "slug": "medium",
-          "size": "16px",
-          "name": "Medium"
-        },
-        {
-          "name": "Regular",
-          "size": "clamp(24px, 5vw, 48px)",
-          "slug": "50"
+          "name": "Medium",
+          "size": "1rem",
+          "slug": "medium"
         },
         {
           "name": "Large",
-          "size": "clamp(24px, 7vw, 70px)",
-          "slug": "56"
+          "size": "1.38rem",
+          "slug": "large"
         },
         {
-          "name": "X-Large",
-          "size": "clamp(50px, 7vw, 90px)",
-          "slug": "70"
+          "name": "Extra Large",
+          "size": "clamp(1.5rem, 1.1939rem + 1.3061vw, 2.5rem)",
+          "slug": "x-large"
         },
         {
-          "name": "XX-Large",
-          "size": "clamp(70px, 10vw, 140px)",
-          "slug": "80"
+          "name": "Extra Extra Large",
+          "size": "2.15rem",
+          "slug": "xx-large"
         }
-      ]
+      ],
+      "dropCap": true
     },
     "spacing": {
       "spacingSizes": [
@@ -227,7 +175,7 @@
           "slug": "80"
         }
       ],
-      "blockGap": "var(--wp--preset--spacing--md) "
+      "blockGap": "var(--wp--preset--spacing--50)"
     }
   },
   "templateParts": [
@@ -253,14 +201,14 @@
       "text": "var(--wp--preset--color--primary)"
     },
     "typography": {
-      "fontFamily": "var(--wp--preset--font-family--system)",
+      "fontFamily": "var(--wp--preset--font-family--manrope)",
       "fontSize": "16px",
       "lineHeight": "1.6"
     },
     "elements": {
       "heading": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--canela-trial)",
+          "fontFamily": "var(--wp--preset--font-family--canela-400)",
           "fontWeight": "400",
           "lineHeight": "1.2",
           "fontSize": "clamp(24px, 6vw, 48px)"
@@ -271,13 +219,13 @@
       },
       "h1": {
         "typography": {
-          "fontSize": "clamp(32px, 6vw, 100px) !important",
+          "fontSize": "clamp(32px, 6vw, 100px)",
           "lineHeight": "1.1"
         }
       },
       "link": {
         "color": {
-          "text": "var(--wp--preset--color--primary)"
+          "text": "var(--wp--preset--color--white)"
         },
         ":hover": {
           "color": {
@@ -289,7 +237,7 @@
     "blocks": {
       "core/button": {
         "border": {
-          "radius": "4px"
+          "radius": "0px"
         },
         "spacing": {
           "padding": {
@@ -304,19 +252,19 @@
           "letterSpacing": "0.05em"
         },
         "color": {
-          "background": "var(--wp--preset--color--background)",
-          "text": "var(--wp--preset--color--dark-brown)"
+          "background": "var(--wp--preset--color--white)",
+          "text": "var(--wp--preset--color--primary)"
         },
         ":hover": {
           "color": {
-            "background": "var(--wp--preset--color--accent-brown)",
-            "text": "#ffffff"
+            "background": "var(--wp--preset--color--primary)",
+            "text": "var(--wp--preset--color--white)"
           }
         }
       },
       "core/group": {
         "spacing": {
-          "blockGap": "var(--wp--preset--spacing--md)"
+          "blockGap": "var(--wp--preset--spacing--50)"
         }
       },
       "core/image": {
